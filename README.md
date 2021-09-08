@@ -36,7 +36,7 @@
 ## 💻 Descrição do projeto 
 
 <p align="justify">
-  Projeto realizado com base no canal de youtube OneBitCode - https://www.youtube.com/channel/UC44Mzz2-5TpyfklUCQ5NuxQ
+  Aplicativo para acompanhar a cotação da moeda virtual Bitcoin
 </p>
 
 ---
