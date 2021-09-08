@@ -94,7 +94,7 @@ Um super thanks 👏 para equipe OneBitCode.
 ## 🎓 Autor
 
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/77983152?s=460&u=f61c18670116cb318cdf26e7523643a6dccb5680&v=4" width="100px;"/>
- <br />
+ 
  <sub><b>Anderson David</b></sub> 👨‍💻☕
  <br />
 
