@@ -93,11 +93,9 @@ Um super thanks 👏 para equipe OneBitCode.
 
 ## 🎓 Autor
 
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/77983152?s=460&u=f61c18670116cb318cdf26e7523643a6dccb5680&v=4" width="100px;"/>
- 
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/77983152?s=460&u=f61c18670116cb318cdf26e7523643a6dccb5680&v=4" width="100px;"/> 
  <sub><b>Anderson David</b></sub> 👨‍💻☕
- <br />
-
+ 
 [![Linkedin Badge](https://img.shields.io/badge/-AndersonDavid-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/anderson-david-ti)](https://www.linkedin.com/in/anderson-david-ti) 
 [![Hotmail Badge](https://img.shields.io/badge/-andersondavidti@hotmail.com-c14438?style=flat-square&logo=Hotmail&logoColor=white&link=mailto:andersondavidti@hotmail.com)](mailto:andersondavidti@hotmail.com)
 
