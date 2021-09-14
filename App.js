@@ -15,10 +15,8 @@ function url(qtdDays) {
   const date = new Date();
   const listLastDays = qtdDays;
   const end_date = `${date.getFullYear()}-${addZero(date.getMonth() + 1)}-${addZero(date.getDate())}`;
-  //console.log(end_date);
   date.setDate(date.getDate() - listLastDays)
   const start_date = `${date.getFullYear()}-${addZero(date.getMonth() + 1)}-${addZero(date.getDate())}`;
-  //console.log(start_date)  
   return `https://api.coindesk.com/v1/bpi/historical/close.json?start=${start_date}&end=${end_date}`;
 }
 
@@ -51,11 +49,17 @@ export default function App() {
   const [coinsGraphicList, setCoinsGraphicList] = useState([0]);
   const [days, setDays] = useState(30);
   const [updateData, setUpadateData] = useState(true);
+  const [price, setPrice] = useState(0);
 
   function updateDay(number) {
     setDays(number);
     setUpadateData(true)
   }
+
+  function priceCotation() {
+    setPrice(coinsGraphicList.pop())
+  }
+
   useEffect(() => {
     getListCoins(url(days)).then((data) => {
       setCoinsList(data)
@@ -65,6 +69,10 @@ export default function App() {
     });
     if (updateData) {
       setUpadateData(false)
+      priceCotation()
+    }
+    if (price == undefined || price == 0) {
+      priceCotation()
     }
   }, [updateData]);
 
@@ -74,7 +82,7 @@ export default function App() {
         backgroundColor="#f50d41"
         barStyle="dark-content"
       />
-      <CurrentPrice />
+      <CurrentPrice lastCotation={price} />
       <HistoryGraphic infoDataGraphic={coinsGraphicList} />
       <QuotationList filterDay={updateDay} listTransactions={coinsList} />
     </SafeAreaView>

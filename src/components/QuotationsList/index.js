@@ -39,14 +39,15 @@ export default function QuotationList(props) {
                     <Text style={styles.textButtonQuery}>1Y</Text>
                 </TouchableOpacity>
             </View>
-            <ScrollView>
-                <FlatList
-                    data={props.listTransactions}
-                    renderItem={({ item }) => {
-                        return <QuotationItems valor={item.valor} data={item.data} />
-                    }}
-                />
-            </ScrollView>
+
+            <FlatList
+                data={props.listTransactions}
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={({ item }) => {
+                    return <QuotationItems valor={item.valor} data={item.data} />
+                }}
+            />
+
         </Fragment>
     )
 }
