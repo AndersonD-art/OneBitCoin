@@ -75,7 +75,7 @@ export default function App() {
         barStyle="dark-content"
       />
       <CurrentPrice />
-      <HistoryGraphic />
+      <HistoryGraphic infoDataGraphic={coinsGraphicList} />
       <QuotationList filterDay={updateDay} listTransactions={coinsList} />
     </SafeAreaView>
   );
