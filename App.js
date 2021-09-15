@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, StatusBar, SafeAreaView, Platform } from 'react-native';
+import { StyleSheet, StatusBar, SafeAreaView, Platform, Pressable } from 'react-native';
 import CurrentPrice from './src/components/CurrentPrice';
 import HistoryGraphic from './src/components/HistoryGraphic';
 import QuotationList from './src/components/QuotationsList';
@@ -49,7 +49,7 @@ export default function App() {
   const [coinsGraphicList, setCoinsGraphicList] = useState([0]);
   const [days, setDays] = useState(30);
   const [updateData, setUpadateData] = useState(true);
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState();
 
   function updateDay(number) {
     setDays(number);
@@ -57,7 +57,9 @@ export default function App() {
   }
 
   function priceCotation() {
-    setPrice(coinsGraphicList.pop())
+    const doubled = coinsList.map((coinsList) => coinsList.valor);
+    const firstElement = doubled.shift();
+    setPrice(firstElement)
   }
 
   useEffect(() => {
@@ -67,14 +69,16 @@ export default function App() {
     getPriceCoinsGraphic(url(days)).then((dataG) => {
       setCoinsGraphicList(dataG)
     });
+
     if (updateData) {
       setUpadateData(false)
-      priceCotation()
     }
-    if (price == undefined || price == 0) {
-      priceCotation()
-    }
+    //console.log('atualizando tabela')
   }, [updateData]);
+
+  useEffect(() => {
+    priceCotation();
+  });
 
   return (
     <SafeAreaView style={styles.container}>
