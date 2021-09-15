@@ -57,8 +57,8 @@ export default function App() {
   }
 
   function priceCotation() {
-    const doubled = coinsList.map((coinsList) => coinsList.valor);
-    const firstElement = doubled.shift();
+    const listPrice = coinsList.map((coinsList) => coinsList.valor);
+    const firstElement = listPrice.shift();
     setPrice(firstElement)
   }
 
