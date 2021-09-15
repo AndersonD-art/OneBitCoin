@@ -51,8 +51,7 @@
 
 <p align="center">
   <img alt="Splash" title="#Splash" src="https://user-images.githubusercontent.com/77983152/133505372-e304231f-77c9-4010-9a87-e26d8b99d3d2.png" width="200px">
-<br />
-<br />
+
   <img alt="Home" title="#Home" src="https://user-images.githubusercontent.com/77983152/133505563-5cf9c7d7-73bc-42a8-b98d-bb16e2ad159b.png" width="200px">  
 </p>
 
