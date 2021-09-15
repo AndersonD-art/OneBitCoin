@@ -5,10 +5,10 @@
   <img src="https://img.shields.io/static/v1?label=react%20native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>   
   <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/>  
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONSTRUINDO&color=yellow&style=for-the-badge"/>   
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>   
 </p>
 
-> Status do Projeto: 🚧 (Em Construção)
+> Status do Projeto: :heavy_check_mark: (concluído)
 ---
 
 ### 📖 Tópicos 
@@ -48,6 +48,12 @@
 ---
 
 ## 🎨 Layout
+
+<p align="center">
+  <img alt="Splash" title="#Splash" src="https://user-images.githubusercontent.com/77983152/133505372-e304231f-77c9-4010-9a87-e26d8b99d3d2.png" width="200px">
+
+  <img alt="Home" title="#Home" src="https://user-images.githubusercontent.com/77983152/133505563-5cf9c7d7-73bc-42a8-b98d-bb16e2ad159b.png" width="200px">  
+</p>
 
 ---
 
